@@ -1,9 +1,10 @@
 pipeline {
-    stages {
-        stage('publish_image') {
-            steps {
-                sh 'order-service/publish_image'
-            }
-        }
-    }
+  agent any
+  stages {
+      stage('publish_image') {
+          steps {
+              echo 'Building..'
+          }
+      }
+  }
 }
