@@ -18,7 +18,7 @@ pipeline {
       stage('publish_image') {
           steps {
               sh """
-                order-service/publish_image
+                order-service/script/publish_image
                 """
           }
       }
@@ -26,7 +26,7 @@ pipeline {
       stage('deploy') {
             steps {
                 sh """
-                order-service/deploy
+                order-service/script/deploy
                 """
             }
       }
