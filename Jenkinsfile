@@ -26,7 +26,7 @@ pipeline {
       stage('deploy') {
             steps {
                 sh """
-                order-service/script/deploy
+                order-service/script/deploy_ecs
                 """
             }
       }
