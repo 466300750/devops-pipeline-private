@@ -1,5 +1,5 @@
 def GitUrl= 'https://github.com/466300750/api-workshop-105'
-def GitBranch= '*/master'
+def GitBranch= '*/nho'
 
 pipeline {
   agent any
